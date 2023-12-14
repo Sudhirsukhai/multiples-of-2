@@ -11,8 +11,8 @@ function Multiple(){
   input = parseInt(input)
   while (n < 5){
     input = input * 2
+    ans = ans + String(input)+ "," + " ";
     n = n + 1
-    
   }
-  
+  document.getElementById("lblresult").innerText = ans
 }
