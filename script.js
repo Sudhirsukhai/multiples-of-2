@@ -5,12 +5,11 @@ function AddListeners(){
 }
 
 function Check(){
-  var f = 2
+  var state = 0
   var input = document.getElementById("txtInput").value
-  while ( f == 2){
-    if (input < 6 || input > 20){
-    alert("Error enter a number from 6-20.")
-    }
+  if (input < 6 || input > 20){
+    document.getElementById("lblerror").innerText = "Error enter a number from 6-20."
+    state = 1
   }
   Multiple()
 }
@@ -20,17 +19,18 @@ function Multiple(){
   var input = document.getElementById("txtInput").value
   var ans = String(input)
   input = parseInt(input)
-  if (input /2 == 0){
-    document.getElementById("lblresult1").innerText = "Even"
-  }else if (input /2 == 1){
-    document.getElementById("lblresult1").innerText = "Odd"
+  //ODD OR EVEN CHECK
+  if (input % 2 == 0){
+    document.getElementById("lblresult2").innerText = "Even"
+  }else if (input % 2 == 1){
+    document.getElementById("lblresult2").innerText = "Odd"
   }
+  //MULTIPLE
   while (n < 4){
     input = input * 2
     ans = ans + "," + " " +String(input);
     n = n + 1
   }
-  document.getElementById("lblresult").innerText = ans
-  
+  document.getElementById("lblresult1").innerText = ans
   
 }
