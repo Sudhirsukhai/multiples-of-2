@@ -19,13 +19,15 @@ function Multiple(){
   var input = document.getElementById("txtInput").value
   var ans = String(input)
   input = parseInt(input)
+  
   //ODD OR EVEN CHECK
   if (input % 2 == 0){
     document.getElementById("lblresult2").innerText = "Even"
   }else if (input % 2 == 1){
     document.getElementById("lblresult2").innerText = "Odd"
   }
-  //MULTIPLE
+  
+  //MULTIPLES OF TWO
   while (n < 4){
     input = input * 2
     ans = ans + "," + " " +String(input);
