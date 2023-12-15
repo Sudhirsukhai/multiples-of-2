@@ -1,0 +1,6 @@
+function Check(){
+  var input = document.getElementById("txtInput").value
+  while (input < 6 || input > 20){
+    alert("Error enter a number from 6-20.")
+  }
+}
