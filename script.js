@@ -10,7 +10,7 @@ function Check(){
   if (Number.isInteger(input) == true ){
     document.getElementById("lblresult2").innerText = "integer, "
   }else { document.getElementById("lblresult2").innerText = "not integer, "}
-  alert(document.getElementById(
+  alert(document.getElementById("lblresult2".value))
   if (input < 6 || input > 20){
     document.getElementById("lblerror").innerText = "Error enter a number from 6-20."
   }else{
