@@ -7,10 +7,10 @@ function AddListeners(){
 
 function Check(){
   var input = document.getElementById("txtInput").value
-  if (Number.isInteger(input) == true ){
+  if (parseInt(input) != ){
     document.getElementById("lblresult2").innerText = "integer, "
   }else { document.getElementById("lblresult2").innerText = "not integer, "}
-  alert(document.getElementById("lblresult2".value))
+  alert(Number.isInteger(input))
   if (input < 6 || input > 20){
     document.getElementById("lblerror").innerText = "Error enter a number from 6-20."
   }else{
@@ -31,9 +31,9 @@ function Multiple(){
   
   //ODD OR EVEN CHECK
   if (input % 2 == 0){
-    document.getElementById("lblresult2").innerText = result2 + "Even"
+    document.getElementById("lblresult3").innerText = "Even"
   }else if (input % 2 == 1){
-    document.getElementById("lblresult2").innerText = result2 +  "Odd"
+    document.getElementById("lblresult").innerText = "Odd"
   }
   
   //MULTIPLES OF TWO
