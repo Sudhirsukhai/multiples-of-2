@@ -1,4 +1,5 @@
 window.addEventListener("load",AddListeners)
+document.getElementById("btnSubmit").disabled
 
 function AddListeners(){
   document.getElementById("btnSubmit").addEventListener("click",Check)
@@ -11,6 +12,10 @@ function Check(){
     document.getElementById("lblerror").innerText = "Error enter a number from 6-20."
   }
   Multiple()
+}
+
+function Vis(){
+  document.getElementById("btnSubmit").enabled
 }
 
 function Multiple(){
