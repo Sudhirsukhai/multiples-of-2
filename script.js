@@ -9,7 +9,7 @@ function Check(){
   while (input == ""("txtInput").value
   while (input == ""){){
     
-    }
+  
   if (input < 6 || input > 20){
     document.getElementById("lblerror").innerText = "Error enter a number from 6-20."
   }
