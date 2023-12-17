@@ -8,7 +8,7 @@ function AddListeners(){
 function Check(){
   var input = document.getElementById("txtInput").value
   if (Number.isInteger(input) == true){
-    
+    document.getElementById("lblresult2").innerText = "integer, "
   }
   if (input < 6 || input > 20){
     document.getElementById("lblerror").innerText = "Error enter a number from 6-20."
@@ -24,14 +24,15 @@ function Vis(){
 function Multiple(){
   var n = 0
   var input = document.getElementById("txtInput").value
+  var result2 = document.getElementById("lblresult2").value
   var ans = String(input)
   input = parseInt(input)
   
   //ODD OR EVEN CHECK
   if (input % 2 == 0){
-    document.getElementById("lblresult2").innerText = "Even"
+    document.getElementById("lblresult2").innerText = result2 + "Even"
   }else if (input % 2 == 1){
-    document.getElementById("lblresult2").innerText = "Odd"
+    document.getElementById("lblresult2").innerText = result2 +  "Odd"
   }
   
   //MULTIPLES OF TWO
