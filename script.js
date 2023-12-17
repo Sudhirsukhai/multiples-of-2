@@ -6,10 +6,7 @@ function AddListeners(){
 
 function Check(){
   var input = document.getElementById("txtInput").value
-  while (input == ""("txtInput").value
-  while (input == ""){){
-    
-    }
+  while (input == ""){
   if (input < 6 || input > 20){
     document.getElementById("lblerror").innerText = "Error enter a number from 6-20."
   }
