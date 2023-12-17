@@ -7,7 +7,7 @@ function AddListeners(){
 
 function Check(){
   var input = document.getElementById("txtInput").value
-  if (parseInt(input) != ){
+  if (parseInt(input) != parseFloat(input)){
     document.getElementById("lblresult2").innerText = "integer, "
   }else { document.getElementById("lblresult2").innerText = "not integer, "}
   alert(Number.isInteger(input))
