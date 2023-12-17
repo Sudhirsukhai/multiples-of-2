@@ -29,7 +29,7 @@ function Multiple(){
   
   //ODD OR EVEN CHECK
   if (input % 2 == 0){
-    document.getElementById("lblresult2").innerText = "Even"
+  ult2").innerTextinnerText = "Even"
   }else if (input % 2 == 1){
     document.getElementById("lblresult2").innerText = "Odd"
   }
