@@ -1,6 +1,7 @@
 window.addEventListener("load",AddListeners)
 function AddListeners(){
-  document.getElementById   document.getElementById("btnSubmit").addEventListener("click",Check)
+  document.getElementById("btnSubmit").disabled = true
+  document.getElementById("btnSubmit").addEventListener("click",Check)
   document.getElementById("txtInput").addEventListener("input",Vis)
 }
 
@@ -8,8 +9,9 @@ function Check(){
   var input = document.getElementById("txtInput").value
   if (input < 6 || input > 20){
     document.getElementById("lblerror").innerText = "Error enter a number from 6-20."
+  }else{
+    Multiple()
   }
-  Multiple()
 }
 
 function Vis(){
