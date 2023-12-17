@@ -7,10 +7,10 @@ function AddListeners(){
 
 function Check(){
   var input = document.getElementById("txtInput").value
-  if (parseInt(input) != parseFloat(input)){
+  input = parseFloat(input)
+  if (Number.isInteger(input)){
     document.getElementById("lblresult2").innerText = "integer, "
   }else { document.getElementById("lblresult2").innerText = "not integer, "}
-  alert(Number.isInteger(input))
   if (input < 6 || input > 20){
     document.getElementById("lblerror").innerText = "Error enter a number from 6-20."
   }else{
