@@ -5,11 +5,13 @@ function AddListeners(){
 }
 
 function Check(){
-  var state = 0
   var input = document.getElementById("txtInput").value
+  while (input == ""("txtInput").value
+  while (input == ""){){
+    
+    }
   if (input < 6 || input > 20){
     document.getElementById("lblerror").innerText = "Error enter a number from 6-20."
-    state = 1
   }
   Multiple()
 }
