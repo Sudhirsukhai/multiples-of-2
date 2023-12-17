@@ -1,8 +1,6 @@
 window.addEventListener("load",AddListeners)
-document.getElementById("btnSubmit").disabled
-
 function AddListeners(){
-  document.getElementById("btnSubmit").addEventListener("click",Check)
+  document.getElementById   document.getElementById("btnSubmit").addEventListener("click",Check)
   document.getElementById("txtInput").addEventListener("input",Vis)
 }
 
@@ -15,7 +13,7 @@ function Check(){
 }
 
 function Vis(){
-  document.getElementById("btnSubmit").enabled
+  document.getElementById("btnSubmit").disabled = false
 }
 
 function Multiple(){
