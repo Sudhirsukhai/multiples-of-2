@@ -8,20 +8,26 @@ function AddListeners(){
 function Check(){
   var input = document.getElementById("txtInput").value
   input = parseFloat(input)
-  if (Number.isInteger(input)){
+  //Integer check
+  if (input%1 == 0){
     document.getElementById("lblresult2").innerText = "integer, "
-  }else { document.getElementById("lblresult2").innerText = "not integer, "}
+  }
+  else { 
+    document.getElementById("lblresult2").innerText = "not integer, "
+  }
   
-  if (input < 6 || input > 20){
+  //num check
+  if (input < 6){
     document.getElementById("lblerror").innerText = "Error enter a number from 6-20."
-  }else{
+  }
+  else if (input > 20){
+    document.getElementById("lblerror").innerText = "Error enter a number from 6-20."
+  }
+  else{
     document.getElementById("lblerror").innerText = ""
     Multiple()
   }
-}
-
-function Vis(){
-  document.getElementById("btnSubmit").disabled = false
+  
 }
 
 function Multiple(){
@@ -34,7 +40,8 @@ function Multiple(){
   //ODD OR EVEN CHECK
   if (input % 2 == 0){
     document.getElementById("lblresult3").innerText = "Even"
-  }else if (input % 2 == 1){
+  }else {
+    alert("l")
     document.getElementById("lblresult").innerText = "Odd"
   }
   
@@ -45,5 +52,8 @@ function Multiple(){
     n = n + 1
   }
   document.getElementById("lblresult1").innerText = ans
-  
+}
+
+function Vis(){
+  document.getElementById("btnSubmit").disabled = false
 }
