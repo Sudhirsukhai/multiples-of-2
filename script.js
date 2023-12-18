@@ -13,8 +13,7 @@ function Check(){
     document.getElementById("lblresult2").innerText = "Integer, "
   }
   else { 
-    document.getElementById("lblresult2").innerText = "Not Integer, "
-    document.getElementById("lblerror").innerText = "Error Num rounded"
+    document.getElementById("lblresult2").innerText = "Not Integer number rounded, "
   }
   
   //num check
@@ -39,12 +38,9 @@ function Multiple(){
   var OddEven = ""
   input = parseInt(input)
   
-  //ODD OR EVEN CHECK
-  
-  
   //MULTIPLES OF TWO
   while (n < 4){
-    
+    //ODD OR EVEN CHECK
     if (input % 2 == 0){
     OddEven = "Even"
   }else {
