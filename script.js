@@ -11,9 +11,11 @@ function Check(){
   if (Number.isInteger(input)){
     document.getElementById("lblresult2").innerText = "integer, "
   }else { document.getElementById("lblresult2").innerText = "not integer, "}
+  
   if (input < 6 || input > 20){
     document.getElementById("lblerror").innerText = "Error enter a number from 6-20."
   }else{
+    document.getElementById("lblerror").innerText = ""
     Multiple()
   }
 }
