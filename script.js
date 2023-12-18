@@ -10,10 +10,11 @@ function Check(){
   input = parseFloat(input)
   //Integer check
   if (input%1 == 0){
-    document.getElementById("lblresult2").innerText = "integer, "
+    document.getElementById("lblresult2").innerText = "Integer, "
   }
   else { 
-    document.getElementById("lblresult2").innerText = "not integer, "
+    document.getElementById("lblresult2").innerText = "Not Integer, "
+    document.getElementById("lblerror").innerText = "Error Num rounded"
   }
   
   //num check
@@ -35,22 +36,25 @@ function Multiple(){
   var input = document.getElementById("txtInput").value
   var result2 = document.getElementById("lblresult2").value
   var ans = String(input)
+  var OddEven = ""
   input = parseInt(input)
   
   //ODD OR EVEN CHECK
-  if (input % 2 == 0){
-    document.getElementById("lblresult3").innerText = "Even"
-  }else {
-    alert("l")
-    document.getElementById("lblresult").innerText = "Odd"
-  }
+  
   
   //MULTIPLES OF TWO
   while (n < 4){
+    
+    if (input % 2 == 0){
+    OddEven = "Even"
+  }else {
+    OddEven = "Odd"
+  }
     input = input * 2
-    ans = ans + "," + " " +String(input);
+    ans = ans + " " + OddEven + "," + " " +String(input);
     n = n + 1
   }
+  ans = ans + " Even"
   document.getElementById("lblresult1").innerText = ans
 }
 
